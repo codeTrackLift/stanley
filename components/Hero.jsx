@@ -11,7 +11,7 @@ export default function Hero() {
       <Image 
         src={hero}
         alt='beach landscape'
-        height='450'
+        height='600'
         width='1200'
         layout='responsive'
         priority

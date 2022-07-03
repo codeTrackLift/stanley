@@ -23,7 +23,7 @@ export default function Home() {
 
       <main>
         <section className="py-5 text-center container">
-          <div className='row'>
+          <div className='row gap-5'>
             <Card 
               header={
                 <iframe 
@@ -55,16 +55,25 @@ export default function Home() {
             />
             <Card 
               header={
-                <Image 
-                  src={licensedLogo}
-                  alt='Licensed insured bonded'
-                  className='img-fluid'
-                  width={300}
-                  height={100}
-                />
+                <div className='row'>
+                  <Image 
+                    src={satisfactionLogo}
+                    alt='Licensed insured bonded'
+                    className='img-fluid col-6'
+                    width={125}
+                    height={125}
+                    />
+                  <Image 
+                    src={licensedLogo}
+                    alt='Licensed insured bonded'
+                    className='img-fluid col-6'
+                    width={125}
+                    height={125}
+                  />
+                </div>
               }
-              title={'HVAC Service'}
-              description={'We provide emergency and maintenance service.  We are available for all your HVAC needs.'}
+              title={'Satisfaction Guaranteed'}
+              description={'We serve residential and commercial clients, offering a varienty of money-saving solutions.  We use only the highest quality partys and equipment.'}
               link={'#'}
               button={'Learn More'}
             />
