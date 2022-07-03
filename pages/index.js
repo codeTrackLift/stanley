@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import Head from 'next/head'
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import Filler from '../components/Filler'
+import Head from 'next/head';
+import Image from 'next/image';
+import Card from '../components/partials/Card';
 
 export default function Home() {
 
@@ -19,16 +18,59 @@ export default function Home() {
         <meta name="description" content="Stanley Cooling, expert air conditioning technicians providing service in Florida." />
       </Head>
 
-      <Navbar />
-      <Hero />
-
       <main>
         <section className="py-5 text-center container">
           <h2>Home</h2>
+          <div className='row gap-5'>
+            <Card 
+              header={
+                <iframe 
+                  className='ratio' 
+                  src="https://youtube.com/embed/GYxXpk08HBA" 
+                  frameBorder="0" 
+                  allowFullScreen 
+                  title='MIT xCHANGE bootcamp project video' 
+                />
+              }
+              title={'HVAC Service'}
+              description={'We provide expert HVAC solutions that fit your heating and cooling needs.  We provide a full consultation to explain all of the available options.'}
+              link={'#'}
+              button={'Learn More'}
+            />
+            <Card 
+              header={
+                <iframe 
+                  className='ratio' 
+                  src="https://youtube.com/embed/GYxXpk08HBA" 
+                  frameBorder="0" 
+                  allowFullScreen 
+                  title='MIT xCHANGE bootcamp project video' 
+                />
+              }
+              title={'HVAC Service'}
+              description={'We provide expert HVAC solutions that fit your heating and cooling needs.  We provide a full consultation to explain all of the available options.'}
+              link={'#'}
+              button={'Learn More'}
+            />
+            <Card 
+              header={
+                <iframe 
+                  className='ratio' 
+                  src="https://youtube.com/embed/GYxXpk08HBA" 
+                  frameBorder="0" 
+                  allowFullScreen 
+                  title='MIT xCHANGE bootcamp project video' 
+                />
+              }
+              title={'HVAC Service'}
+              description={'We provide expert HVAC solutions that fit your heating and cooling needs.  We provide a full consultation to explain all of the available options.'}
+              link={'#'}
+              button={'Learn More'}
+            />
+          </div>
+
         </section>
       </main>
-
-      <Filler />
 
     </div>
   )

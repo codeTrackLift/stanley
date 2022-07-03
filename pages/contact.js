@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import Head from 'next/head'
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
 
 export default function Contact() {
 
@@ -17,9 +15,6 @@ export default function Contact() {
         <title>Contact | Standley Cooling</title>
         <meta name="description" content="Stanley Cooling, expert air conditioning technicians providing service in Florida." />
       </Head>
-
-      <Navbar />
-      <Hero />
 
       <main>
         <section className="py-5 text-center container">

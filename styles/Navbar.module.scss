@@ -9,6 +9,8 @@
   font-size: large;
   font-weight: 900;
   text-shadow: 2px 2px 2px black;
+  -webkit-filter: drop-shadow(2px 2px 2px black);
+  filter: drop-shadow(2px 2px 2px black);
 }
 
 .logo {
@@ -18,19 +20,22 @@
   filter: drop-shadow(2px 2px 2px white);
 }
 
-@media (max-width:540px) {
+@media (max-width:700px) {
+  .nav {
+    transform: translateY(-2rem);
+  }
+  .logo {    
+    transform: translateY(2.25rem);
+    width: 4rem;
+  }
+}
+
+@media (max-width:650px) {
   .nav {
     transform: translateY(-1rem);
   }
   .logo {    
     transform: translateY(.5rem);
     width: 3rem;
-  }
-}
-
-@media (max-width:860px) {
-  .logo {    
-    transform: translateY(2.25rem);
-    width: 4rem;
   }
 }

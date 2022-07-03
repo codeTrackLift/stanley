@@ -1,8 +1,11 @@
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import ButtonCta from './partials/ButtonCta';
 import hero from '../images/heroBeach.jpg';
 import styles from '../styles/Hero.module.scss'
 
 export default function Hero() {
+
   return (
     <header>
       <Image 
@@ -14,7 +17,13 @@ export default function Hero() {
         priority
       />
       <div className={`text-center`}>
-        <h1 className={`${styles.h1}`}>On-call HVAC to help you get cozy</h1>
+        <motion.div
+          animate={{ translateY: -80 }}
+          transition={{ duration: 0.25 }}
+        >
+          <h1 className={`${styles.h1}`}>On-call HVAC to help you get cozy</h1>
+        </motion.div>
+        <ButtonCta className='title' />
       </div>
     </header>
   )

@@ -1,10 +1,12 @@
 .h1 {
-  transform: translateY(-10rem);
-  text-shadow: 2px 2px 2px white;
+  text-shadow: 1px 1px 1px white;
+  -webkit-filter: drop-shadow(2px 2px 2px skyblue);
+  filter: drop-shadow(2px 2px 2px skyblue);
 }
 
-@media (max-width: 540px) {
+@media (min-width: 800px) {
   .h1 {
-    transform: translateY(-5rem);
+    transform: translateY(-8rem);
+    font-size: 3rem;
   }
 }
