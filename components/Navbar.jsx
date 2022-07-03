@@ -1,6 +1,6 @@
 import Link from 'next/Link'
 
-export default function NavBar() {
+export default function Navbar() {
   return (
     <>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
