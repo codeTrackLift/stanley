@@ -19,9 +19,10 @@ export default function Hero() {
       <div className={`text-center`}>
         <motion.div
           animate={{ translateY: -80 }}
-          transition={{ duration: 0.25 }}
+          transition={{ delay: 0.25, duration: 0.25 }}
         >
           <h1 className={`${styles.h1}`}>On-call HVAC to help you get cozy</h1>
+          <h2 className={`${styles.h2}`}>555-555-5555</h2>
         </motion.div>
         <ButtonCta className='title' />
       </div>

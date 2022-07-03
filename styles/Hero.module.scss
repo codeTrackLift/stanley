@@ -1,11 +1,29 @@
-.h1 {
+.h1, .h2 {
   text-shadow: 1px 1px 1px white;
   -webkit-filter: drop-shadow(2px 2px 2px skyblue);
   filter: drop-shadow(2px 2px 2px skyblue);
 }
 
+.h2 {
+  transform: translateY
+}
+
+@media (min-width: 650px) {
+  .h1, .h2 {
+    transform: translateY(-2rem);
+    font-size: 2rem;
+  }
+}
+
 @media (min-width: 800px) {
-  .h1 {
+  .h1, .h2 {
+    transform: translateY(-5rem);
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .h1, .h2 {
     transform: translateY(-8rem);
     font-size: 3rem;
   }
