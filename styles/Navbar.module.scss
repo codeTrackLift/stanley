@@ -1,0 +1,36 @@
+.nav {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+  transform: translateY(-3rem);
+}
+
+.navLink {
+  font-size: large;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px black;
+}
+
+.logo {
+  transform: translateY(3rem);
+  width: 8rem;
+  -webkit-filter: drop-shadow(2px 2px 2px white);
+  filter: drop-shadow(2px 2px 2px white);
+}
+
+@media (max-width:540px) {
+  .nav {
+    transform: translateY(-1rem);
+  }
+  .logo {    
+    transform: translateY(.5rem);
+    width: 3rem;
+  }
+}
+
+@media (max-width:860px) {
+  .logo {    
+    transform: translateY(2.25rem);
+    width: 4rem;
+  }
+}

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
 
 export default function Contact() {
 
@@ -18,6 +19,7 @@ export default function Contact() {
       </Head>
 
       <Navbar />
+      <Hero />
 
       <main>
         <section className="py-5 text-center container">
