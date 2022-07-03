@@ -1,10 +1,17 @@
 import { motion } from 'framer-motion';
 
 const cardStyle = {
-  transition:'all 0.5s ease-in-out',
-  width: '18rem', 
   height:'25rem', 
-  transform:'scale(0.8)'
+  width: '18rem', 
+  background: 'aliceblue',
+  transition:'all 0.5s ease-in-out',
+  transform:'scale(0.8)',
+}
+
+const btnStyle = {
+  background: 'skyblue',
+  border: '1px solid skyblue',
+  borderRadius: '100vw',
 }
 
 export default function Card({header, title, description, link, button}) {
@@ -19,7 +26,7 @@ return (
         {header}
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{description}</p>
-        <a href={link} className="btn btn-primary">{button}</a>
+        <a href={link} className="btn btn-primary" style={btnStyle}>{button}</a>
       </div>
     </motion.div>
   )
