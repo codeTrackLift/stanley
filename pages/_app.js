@@ -12,19 +12,21 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-
       <Navbar />
       <motion.div
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.75 }}
       >
         <Hero />
-
+        <motion.div
+          animate={{ scale: 1 }}
+          initial={{ scale: 0 }}
+          transition={{ duration: 1.25 }}
+        >
         <Component {...pageProps} />
-
         <Footer />
-
+        </motion.div>
       </motion.div>
     </>
   );
