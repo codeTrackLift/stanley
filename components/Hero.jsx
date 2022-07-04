@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <header className={`${styles.header} text-center`}>
       <div className={`${styles.top}`}>
-        <h5 className={`${styles.h5} fw-normal pt-2`}>CONTACT US FOR A FREE QUOTE!</h5>
+        <h5 className={`${styles.h5} fw-normal pt-1`}>CONTACT US FOR A FREE QUOTE!</h5>
       </div>
       <div className={`${styles.gray}`}>
       </div>

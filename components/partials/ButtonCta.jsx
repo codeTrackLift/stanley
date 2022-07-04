@@ -4,8 +4,8 @@ const buttonCtaStyle = {
   fontSize: '1rem',
   borderRadius: '100vw',
   padding: '1rem 2rem',
-  background: '#B3D4F6',
-  border: '2px solid #B3D4F6',
+  background: 'var(--blue)',
+  border: '2px solid var(--blue)',
   color: 'black',
   letterSpacing: '1.5px',
 }
