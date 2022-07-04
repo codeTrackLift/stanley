@@ -3,7 +3,7 @@ import "../styles/application.scss";
 import Head from "next/head";
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
-import Filler from '../components/Filler'
+import Footer from '../components/Footer'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
 
       <Component {...pageProps} />
 
-      <Filler />
+      <Footer />
 
     </>
   );

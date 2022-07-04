@@ -7,7 +7,7 @@ import styles from '../styles/Hero.module.scss'
 export default function Hero() {
 
   return (
-    <header>
+    <header className={styles.header}>
       <Image 
         src={hero}
         alt='beach landscape'
@@ -22,9 +22,9 @@ export default function Hero() {
           transition={{ delay: 0.25, duration: 0.25 }}
         >
           <h1 className={`${styles.h1}`}>On-call HVAC to help you get cozy</h1>
-          <h2 className={`${styles.h2}`}>555-555-5555</h2>
+          <h2 className={`${styles.h2} text-end px-5`}>555-555-5555</h2>
         </motion.div>
-        <ButtonCta className='title' />
+        <ButtonCta />
       </div>
     </header>
   )

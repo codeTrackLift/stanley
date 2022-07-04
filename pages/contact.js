@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Head from 'next/head'
 
+import Filler from '../components/Filler'
+
 export default function Contact() {
 
   useEffect(() => {
@@ -21,6 +23,8 @@ export default function Contact() {
           <h2>Contact</h2>
         </section>
       </main>
+      
+      <Filler />
 
     </div>
   )

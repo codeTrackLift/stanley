@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion';
 
 const cardStyle = {
-  height:'25rem', 
+  height:'10rem', 
   width: '18rem', 
-  background: 'aliceblue',
+  background: 'skyblue',
   transition:'all 0.5s ease-in-out',
   transform:'scale(0.8)',
 }
 
-export default function Card({header, title, description}) {
+export default function Card({title, description}) {
 return (
     <motion.div 
       whileInView={{ scale: 1 }}
@@ -17,7 +17,6 @@ return (
       style={cardStyle}
     >
       <div className="card-body pt-4">
-        {header}
         <h5 className="card-title py-3">{title}</h5>
         <p className="card-text">{description}</p>
       </div>

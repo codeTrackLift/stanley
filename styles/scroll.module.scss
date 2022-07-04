@@ -1,0 +1,19 @@
+.scrollContainer {
+  margin: 6rem 0 4rem 0;
+  background-color: transparent;
+  white-space: nowrap;
+  scrollbar-width: none;
+  width: 100vw;
+  max-width: 1400px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: flex;
+  -ms-overflow-style: none;
+}
+
+.image {
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  transition: all 0.25s ease-in-out;
+}

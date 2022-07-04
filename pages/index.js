@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import Head from 'next/head';
-import Image from 'next/image';
-import Card from '../components/partials/Card';
-import hvacRepair from '../images/hvacRepair.webp';
-import satisfactionLogo from '../images/satisfactionLogo.png';
-import licensedLogo from '../images/licensedLogo.gif';
+import CardSection from '../components/CardSection';
+import Employees from '../components/Employees';
+import Info from '../components/Info';
+import ScrollContainer from '../components/partials/ScrollContainer';
 
 export default function Home() {
 
@@ -22,64 +21,19 @@ export default function Home() {
       </Head>
 
       <main>
-        <section className="py-5 text-center container">
-          <div className='row gap-5'>
-            <Card 
-              header={
-                <iframe 
-                  className='ratio' 
-                  src="https://youtube.com/embed/GYxXpk08HBA" 
-                  frameBorder="0" 
-                  allowFullScreen 
-                  title='MIT xCHANGE bootcamp project video' 
-                />
-              }
-              title={'HVAC Service'}
-              description={'We provide expert HVAC solutions that fit your heating and cooling needs.  We provide a full consultation to explain all of the available options.'}
-              link={'#'}
-              button={'Learn More'}
-            />
-            <Card 
-              header={
-                <Image 
-                  src={hvacRepair}
-                  alt='HVAC repair technician'
-                  className='img-fluid'
-                  width={300}
-                />
-              }
-              title={'HVAC Service'}
-              description={'We provide emergency and maintenance service.  We are available for all your HVAC needs.'}
-              link={'#'}
-              button={'Learn More'}
-            />
-            <Card 
-              header={
-                <div className='row'>
-                  <Image 
-                    src={satisfactionLogo}
-                    alt='Licensed insured bonded'
-                    className='img-fluid col-6'
-                    width={125}
-                    height={125}
-                    />
-                  <Image 
-                    src={licensedLogo}
-                    alt='Licensed insured bonded'
-                    className='img-fluid col-6'
-                    width={125}
-                    height={125}
-                  />
-                </div>
-              }
-              title={'Satisfaction Guaranteed'}
-              description={'We serve residential and commercial clients, offering a varienty of money-saving solutions.  We use only the highest quality partys and equipment.'}
-              link={'#'}
-              button={'Learn More'}
-            />
-          </div>
 
-        </section>
+        <CardSection />
+
+        <ScrollContainer />
+
+        <h4 className='mx-4 px-4 pb-4'>Our Team</h4>
+
+        <Employees />
+
+        <h4 className='mx-4 px-4 pt-5'>Office Information</h4>
+
+        <Info />
+
       </main>
 
     </div>

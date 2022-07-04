@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Head from 'next/head'
 
+import Filler from '../components/Filler'
+
 export default function Services() {
 
   useEffect(() => {
@@ -21,6 +23,8 @@ export default function Services() {
           <h2>Services</h2>
         </section>
       </main>
+
+      <Filler />
 
     </div>
   )

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const cardStyle = {
-  height:'25rem', 
+  height:'37rem', 
   width: '18rem', 
   background: 'aliceblue',
   transition:'all 0.5s ease-in-out',
@@ -13,7 +13,7 @@ return (
     <motion.div 
       whileInView={{ scale: 1 }}
       transition={{ delay: 1.5, duration: 0.5 }}
-      className="card col-sm-4 mx-auto boxShadow mt-5" 
+      className="card col-sm-4 mx-auto boxShadow" 
       style={cardStyle}
     >
       <div className="card-body pt-4">
