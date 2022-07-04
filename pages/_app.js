@@ -8,24 +8,25 @@ import Footer from '../components/Footer'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <motion.div
-      animate={{ opacity: 1 }}
-      initial={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+    <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <Navbar />
+      <motion.div
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <Hero />
 
-      <Hero />
+        <Component {...pageProps} />
 
-      <Component {...pageProps} />
+        <Footer />
 
-      <Footer />
-
-    </motion.div>
+      </motion.div>
+    </>
   );
 }
 
