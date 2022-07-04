@@ -1,6 +1,4 @@
-import Image from 'next/image';
 import ButtonCta from './partials/ButtonCta';
-import hero from '../images/heroBeach.jpg';
 import styles from '../styles/Hero.module.scss'
 
 export default function Hero() {

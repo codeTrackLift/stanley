@@ -5,6 +5,10 @@ import Employees from '../components/Employees';
 import Info from '../components/Info';
 import ScrollContainer from '../components/partials/ScrollContainer';
 
+const h4Style ={
+  fontFamily: `'Oswald-Light', sans-serif`,
+}
+
 export default function Home() {
 
   useEffect(() => {
@@ -26,11 +30,11 @@ export default function Home() {
 
         <ScrollContainer />
 
-        <h4 className='mx-4 px-4 pb-4 fw-light'>Our Team</h4>
+        <h4 className='mx-4 px-4 pb-4' style={h4Style}>Our Team</h4>
 
         <Employees />
 
-        <h4 className='mx-4 px-4 pt-5 fw-light'>Office Information</h4>
+        <h4 className='mx-4 px-4 pt-5' style={h4Style}>Office Information</h4>
 
         <Info />
 
