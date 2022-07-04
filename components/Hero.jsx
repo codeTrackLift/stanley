@@ -12,7 +12,7 @@ export default function Hero() {
       </div>
       <div className={`${styles.greeting}`}>
         <h1 className={`${styles.h1}`}>ON-CALL HVAC TO HELP YOU GET COZY</h1>
-        <h2 className={`${styles.h2} text-end px-5`}>555-555-5555</h2>
+        <h2 className={`${styles.h2} text-end px-5`}><a href="tel:+1-555-555-5555">555-555-5555</a></h2>
       </div>
       <div className={`${styles.button}`}>
         <ButtonCta />
