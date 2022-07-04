@@ -20,6 +20,10 @@ html {
   width: 100%;
 }
 
+.h1, .nav-item>a {
+  font-family: 'Oswald', sans-serif;
+}
+
 @media (max-width:575px) {
   .navbar-collapse {
     border-radius: 20px;
