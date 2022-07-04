@@ -1,8 +1,6 @@
 import { motion } from "framer-motion"
 
 const buttonCtaStyle = {
-  marginTop: '-5rem',
-  marginBottom: '8rem',
   fontSize: '1rem',
   borderRadius: '100vw',
   padding: '1rem 2rem',
