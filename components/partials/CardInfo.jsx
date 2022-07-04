@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const cardStyle = {
   height:'10rem', 
   width: '18rem', 
-  background: 'skyblue',
+  background: '#B3D4F6',
   transition:'all 0.5s ease-in-out',
   transform:'scale(0.8)',
 }
