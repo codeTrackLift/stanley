@@ -3,12 +3,13 @@ import { motion } from "framer-motion"
 const buttonCtaStyle = {
   marginTop: '-5rem',
   marginBottom: '8rem',
-  fontSize: '1.5rem',
+  fontSize: '1rem',
   borderRadius: '100vw',
-  padding: '0.5rem 1rem',
+  padding: '1rem 2rem',
   background: 'skyblue',
   border: '2px solid skyblue',
-  color: 'white',
+  color: 'black',
+  letterSpacing: '1.5px',
 }
 
 export default function ButtonCta() {
@@ -22,7 +23,7 @@ export default function ButtonCta() {
         className={`boxShadow`} 
         style={buttonCtaStyle}
       >
-        Contact Us!
+        GET A FREE QUOTE
       </button>
     </motion.div>
   )

@@ -26,11 +26,11 @@ export default function Home() {
 
         <ScrollContainer />
 
-        <h4 className='mx-4 px-4 pb-4'>Our Team</h4>
+        <h4 className='mx-4 px-4 pb-4 fw-light'>Our Team</h4>
 
         <Employees />
 
-        <h4 className='mx-4 px-4 pt-5'>Office Information</h4>
+        <h4 className='mx-4 px-4 pt-5 fw-light'>Office Information</h4>
 
         <Info />
 

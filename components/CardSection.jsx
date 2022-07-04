@@ -48,7 +48,7 @@ export default function CardSection() {
               alt='Licensed insured bonded'
               className='img-fluid col-6'
               width={125}
-              height={125}
+              height={100}
             />
           </div>
         }

@@ -7,7 +7,7 @@ import styles from '../styles/Hero.module.scss'
 export default function Hero() {
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} text-center`}>
       <Image 
         src={hero}
         alt='beach landscape'
@@ -16,16 +16,14 @@ export default function Hero() {
         layout='responsive'
         priority
       />
-      <div className={`text-center`}>
-        <motion.div
-          animate={{ translateY: -80 }}
-          transition={{ delay: 0.25, duration: 0.25 }}
-        >
-          <h1 className={`${styles.h1}`}>On-call HVAC to help you get cozy</h1>
-          <h2 className={`${styles.h2} text-end px-5`}>555-555-5555</h2>
-        </motion.div>
-        <ButtonCta />
-      </div>
+      <motion.div
+        animate={{ translateY: -80 }}
+        transition={{ delay: 0.25, duration: 0.25 }}
+      >
+        <h1 className={`${styles.h1}`}>On-call HVAC to help you get cozy</h1>
+        <h2 className={`${styles.h2} text-end px-5`}>555-555-5555</h2>
+      </motion.div>
+      <ButtonCta />
     </header>
   )
 }
