@@ -42,6 +42,10 @@ html {
   }
 }
 
+.nav-item.active {
+  border-bottom: 3px solid var(--blue);
+}
+
 a {
   text-decoration: none;
 }

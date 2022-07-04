@@ -34,8 +34,6 @@ export default function Home() {
 
         <Employees />
 
-        <h4 className='mx-4 px-4 pt-5' style={h4Style}>Office Information</h4>
-
         <Info />
 
       </main>

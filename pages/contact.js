@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import Head from 'next/head'
-
+import ScrollContainer from '../components/partials/ScrollContainer'
 import Filler from '../components/Filler'
+import Info from '../components/Info'
 
 export default function Contact() {
 
@@ -25,6 +26,8 @@ export default function Contact() {
       </main>
       
       <Filler />
+      <ScrollContainer />
+      <Info />
 
     </div>
   )
