@@ -34,11 +34,8 @@
   margin: 0 auto;
 }
 
-.h1, .h2 {
-  transform: translateY(10rem);
-}
-
 .h1 {
+  transform: translateY(10rem);
   font-family: 'Oswald-Regular', sans-serif;
   font-size: 3rem;
   font-weight: 400;
@@ -49,6 +46,7 @@
 }
 
 .h2 {
+  transform: translateY(10rem);
   color: white !important;
   font-size: 2rem;
   font-family: 'Poppins', sans-serif;
