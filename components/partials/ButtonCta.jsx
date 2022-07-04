@@ -14,8 +14,9 @@ export default function ButtonCta() {
 
   return (
     <motion.div
-      whileInView={{ translateY: -90 }}
-      transition={{ type: 'spring', stiffness: 1000, delay: 0.5 }}
+      whileInView={{ translateY: -90, opacity: 1 }}
+      transition={{ type: 'spring', stiffness: 1000, duration: 1, delay: 0.5 }}
+      initial={{ opacity: 0 }}
     >
       <button 
         className={`boxShadow`} 

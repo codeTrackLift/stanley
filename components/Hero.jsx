@@ -13,7 +13,7 @@ export default function Hero() {
       <div className={`${styles.gray}`}>
       </div>
       <div className={`${styles.greeting}`}>
-        <h1 className={`${styles.h1}`}>On-call HVAC to help you get cozy</h1>
+        <h1 className={`${styles.h1}`}>ON-CALL HVAC TO HELP YOU GET COZY</h1>
         <h2 className={`${styles.h2} text-end px-5`}>555-555-5555</h2>
       </div>
       <div className={`${styles.button}`}>
