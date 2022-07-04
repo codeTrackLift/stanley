@@ -4,10 +4,20 @@ import ButtonCta from './partials/ButtonCta';
 import hero from '../images/heroBeach.jpg';
 import styles from '../styles/Hero.module.scss'
 
+const h3Style = {
+  position: 'relative',
+  zIndex: 10,
+  height: 0,
+  letterSpacing: 1.5,
+}
+
 export default function Hero() {
 
   return (
     <header className={`${styles.header} text-center`}>
+      <div style={h3Style}>
+        <h5 className={`${styles.h5} fw-normal pt-2`}>CONTACT US FOR A FREE QUOTE!</h5>
+      </div>
       <Image 
         src={hero}
         alt='beach landscape'
