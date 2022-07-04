@@ -9,19 +9,27 @@ export default function Navbar() {
     <nav className={`${styles.nav} navbar navbar-expand-sm navbar-light bg-transparent fixed-top`}>
       <div className="container-fluid">
         <a className={`${styles.logo} navbar-brand`} href="#"><Image src={logo} alt='logo' /></a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button 
+          className="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mx-3 mt-5 mb-2 mb-lg-0 gap-5">
+          <ul className="navbar-nav me-auto mx-3 mt-5 mb-2 gap-5">
             <li className={`${styles.navLink} nav-item`}>
-              <Link href="/">Home</Link>
+              <Link href="/">HOME</Link>
             </li>
             <li className={`${styles.navLink} nav-item`}>
-              <Link href="/services">Services</Link>
+              <Link href="/services">SERVICES</Link>
             </li>
             <li className={`${styles.navLink} nav-item`}>
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact">CONTACT</Link>
             </li>
           </ul>
         </div>
