@@ -5,7 +5,7 @@ import hvacTech from '../../images/hvacTech.webp'
 import whiteVans from '../../images/whiteVans.webp'
 import styles from '../../styles/scroll.module.scss'
 
-import InitScroll from '../../utils/initScroll'
+import InitScroll from '../../utils/InitScroll'
 
 export default function ScrollContainer() {
 
